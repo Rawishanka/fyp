@@ -3,6 +3,11 @@ import { Section } from "@/app/component/Section";
 import Image from "next/image";
 import welcome from "../public/welcome.png";
 import { ResearchObjectives } from "./component/ResearchObjectives";
+import { MethodologyOverview } from "./component/Methodology";
+import { RequirementElicitation } from "./component/RequirenmentElicitation";
+import { OntologyDesign } from "./component/OntologyDesign";
+import { SystemDesignImplementation } from "./component/SystemDesignImplementation";
+import { Evaluation } from "./component/Evaluation";
 export default function Home() {
   return (
     <div>
@@ -83,6 +88,11 @@ export default function Home() {
         />
 
         <ResearchObjectives />
+        <MethodologyOverview />
+        <RequirementElicitation />
+        <OntologyDesign />
+        <SystemDesignImplementation />
+        <Evaluation />
       </main>
     </div>
   );
