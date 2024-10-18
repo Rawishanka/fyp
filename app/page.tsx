@@ -1,13 +1,13 @@
 import { Header } from "@/app/component/Header";
 import { Section } from "@/app/component/Section";
 import Image from "next/image";
-import welcome from "../public/welcome.png";
 import { ResearchObjectives } from "./component/ResearchObjectives";
 import { MethodologyOverview } from "./component/Methodology";
 import { RequirementElicitation } from "./component/RequirenmentElicitation";
 import { OntologyDesign } from "./component/OntologyDesign";
 import { SystemDesignImplementation } from "./component/SystemDesignImplementation";
 import { Evaluation } from "./component/Evaluation";
+import ExistingSystems from "./component/ExistingSystems";
 export default function Home() {
   return (
     <div>
@@ -49,7 +49,7 @@ export default function Home() {
             <h1 className="text-3xl font-bold text-blue-700 mb-4">
               Introduction to Resource Allocation in Digital Marketplaces
             </h1>
-            <p className="py-5 text-2xl text-orange-400">
+            <p className="py-5 text-2xl text-sky-700">
               Involves the process of efficiently connecting users’ needs with
               available resources through various online platforms
             </p>
@@ -72,11 +72,6 @@ export default function Home() {
           </div>
         </section>
         <Section
-          id="introduction"
-          title="Introduction to Resource Allocation in Digital Marketplaces"
-          content="Involves the process of efficiently connecting users’ needs with available resources through various online platforms."
-        />
-        <Section
           id="motivation"
           title="Motivation"
           content="Gathers ads from different sources into a unified platform, making finding relevant ads and requests easier."
@@ -88,6 +83,7 @@ export default function Home() {
         />
 
         <ResearchObjectives />
+        <ExistingSystems/>
         <MethodologyOverview />
         <RequirementElicitation />
         <OntologyDesign />
