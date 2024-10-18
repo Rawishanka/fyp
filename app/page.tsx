@@ -8,42 +8,13 @@ import { OntologyDesign } from "./component/OntologyDesign";
 import { SystemDesignImplementation } from "./component/SystemDesignImplementation";
 import { Evaluation } from "./component/Evaluation";
 import ExistingSystems from "./component/ExistingSystems";
+import { Welcome } from "./component/Welcome";
 export default function Home() {
   return (
     <div>
       <Header />
       <main>
-        <section className="flex items-center justify-center w-auto">
-          <div>
-            <Image
-              src="/classified_adv.png"
-              alt="Welcome Image"
-              width={600} // Increased width
-              height={500} // Increased height
-              className="rounded-lg"
-            />
-          </div>
-          <div className="px-6">
-            <h1 className="text-6xl">
-              Resource Allocator/Mapper
-              <br /> for
-              <br /> Efficient Transactions
-            </h1>
-            <div className="mt-20">
-              <ul>
-                <li>Supervisor : Prof. Indika Perera</li>
-                <li>
-                  Team Members:
-                  <ul>
-                    <li className="pl-16">Alwis L.W.D.D 200021T</li>
-                    <li className="pl-16">Chathunka W.A.P 200089G</li>
-                    <li className="pl-16">Rawishanka D.D.R.L 200540H</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+        <Welcome />
         <section id="introduction" className="py-8">
           <div className="container mx-auto md:flex-row items-center">
             <h1 className="text-3xl font-bold text-blue-700 mb-4">
