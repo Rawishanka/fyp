@@ -1,6 +1,5 @@
 import { Header } from "@/app/component/Header";
 import { Section } from "@/app/component/Section";
-import Image from "next/image";
 import { ResearchObjectives } from "./component/ResearchObjectives";
 import { MethodologyOverview } from "./component/Methodology";
 import { RequirementElicitation } from "./component/RequirenmentElicitation";
@@ -59,7 +58,7 @@ export default function Home() {
         <OntologyDesign />
         <SystemDesignImplementation />
         <Evaluation />
-        {/* <ExistingSystems/> */}
+        <ExistingSystems/>
       </main>
     </div>
   );
