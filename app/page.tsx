@@ -1,14 +1,22 @@
 import { Header } from "@/app/component/Header";
 import { Section } from "@/app/component/Section";
-
+import Image from "next/image";
+import welcome from "../public/welcome.png";
 export default function Home() {
   return (
     <div>
       <Header />
       <main>
-        <section className="px-20 py-20 text-orange-600">
-          <h1 className="text-5xl">Resource Allocator/Mapper for Efficient Transactions</h1>
+        <section className="flex items-center justify-center w-auto">
+          <Image
+            src="/welcome.png"
+            alt="Welcome Image"
+            width={1500}  // Increased width
+    height={500} // Increased height 
+            className="rounded-lg"
+          />
         </section>
+
         <Section
           id="introduction"
           title="Introduction to Resource Allocation in Digital Marketplaces"
