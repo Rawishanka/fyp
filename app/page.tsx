@@ -83,12 +83,12 @@ export default function Home() {
         />
 
         <ResearchObjectives />
-        <ExistingSystems/>
         <MethodologyOverview />
         <RequirementElicitation />
         <OntologyDesign />
         <SystemDesignImplementation />
         <Evaluation />
+        {/* <ExistingSystems/> */}
       </main>
     </div>
   );
