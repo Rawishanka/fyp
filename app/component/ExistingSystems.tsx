@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 const ExistingSystems = () => {
   return (
-    <div className=" container mx-auto md:flex-row items-center">
+    <div className=" container mx-auto md:flex-row items-center px-4">
       <h1 className="text-3xl font-bold text-blue-700 mb-4  ">
         Existing Systems
       </h1>
-      <div className="grid grid-cols-3 gap-4 mt-10">
+      <div className="grid grid-cols-3 gap-4 mt-10 justify-items-center">
         <div><Image src={"/gumtree.png"} width={200} height={300} alt={"gumtree"}></Image></div>
         <div><Image src={"/craiglist.png"} alt={"gumtree"} width={300} height={300}></Image></div>
         <div><Image src={"/facebook.png"} width={300} height={300} alt={"gumtree"}></Image></div>
