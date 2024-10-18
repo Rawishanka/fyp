@@ -1,6 +1,8 @@
 import { Header } from "@/app/component/Header";
 import { Section } from "@/app/component/Section";
 import Image from "next/image";
+import welcome from "../public/welcome.png";
+import { ResearchObjectives } from "./component/ResearchObjectives";
 export default function Home() {
   return (
     <div>
@@ -26,7 +28,7 @@ export default function Home() {
               <ul>
                 <li>Supervisor : Prof. Indika Perera</li>
                 <li>
-                Team Members:
+                  Team Members:
                   <ul>
                     <li className="pl-16">Alwis L.W.D.D 200021T</li>
                     <li className="pl-16">Chathunka W.A.P 200089G</li>
@@ -79,11 +81,8 @@ export default function Home() {
           title="Problem Statement"
           content="Users face difficulties locating relevant ads and requests due to fragmented sources. Poor categorization makes it harder to find desired ads."
         />
-        <Section
-          id="objectives"
-          title="Research Objectives"
-          content="1. Develop a scraper to collect ads from multiple platforms. 2. Organize and categorize ads into a standard framework."
-        />
+
+        <ResearchObjectives />
       </main>
     </div>
   );
