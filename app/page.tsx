@@ -2,6 +2,7 @@ import { Header } from "@/app/component/Header";
 import { Section } from "@/app/component/Section";
 import Image from "next/image";
 import welcome from "../public/welcome.png";
+import { ResearchObjectives } from "./component/ResearchObjectives";
 export default function Home() {
   return (
     <div>
@@ -11,8 +12,8 @@ export default function Home() {
           <Image
             src="/welcome.png"
             alt="Welcome Image"
-            width={1500}  // Increased width
-    height={500} // Increased height 
+            width={1500} // Increased width
+            height={500} // Increased height
             className="rounded-lg"
           />
         </section>
@@ -37,6 +38,7 @@ export default function Home() {
           title="Research Objectives"
           content="1. Develop a scraper to collect ads from multiple platforms. 2. Organize and categorize ads into a standard framework."
         />
+        <ResearchObjectives />
       </main>
     </div>
   );
